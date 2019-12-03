@@ -27,6 +27,7 @@ input{
     border-radius: 5px;
     font-size: 1rem;
     padding: 5px;
+    border:1px solid black;
 }
 
 
@@ -36,7 +37,15 @@ button{
     margin: 5px;
     font-size: 1rem;
     padding: 5px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
 }
+
+button:hover{
+  transform: translateY(-1px);
+  background: lavender;
+}
+
 
 .task-card{
     width: 50%;
@@ -52,4 +61,6 @@ button{
     padding: 5px;
     border-radius: 5px;
 }
+
+
 
