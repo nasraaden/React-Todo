@@ -35,7 +35,7 @@ class App extends React.Component {
     this.setState({todo, todos: ''})
   }
 
-  removeItem = e => {
+  removeItem = () => {
     this.setState(previousState => {
       return {
         todo: previousState.todo.filter(todos => {
@@ -48,9 +48,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Nasra's To Do List</h1>
+        <h1>Nasra's Todo List</h1>
         <TodoForm 
-        
         addItem={this.addItem}
         removeItem={this.removeItem}
         />

@@ -9,7 +9,6 @@ const Todo = props => {
             <TodoList key={index} item={item} 
             toggleComplete={props.toggleComplete}/>
             ))}
-            
         </div>
     )
 }
