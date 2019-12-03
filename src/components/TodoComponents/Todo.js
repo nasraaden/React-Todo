@@ -6,9 +6,10 @@ const Todo = props => {
     return (
         <div>
             {props.todo.map((item, index) => (
-            <TodoList key={index} item={item} />
+            <TodoList key={index} item={item} 
+            toggleComplete={props.toggleComplete}/>
             ))}
-            <button>Clear Completed</button>
+            
         </div>
     )
 }
