@@ -1,2 +1,18 @@
-// your components will all go in this `component` directory.
-// feel free to change this component.js into TodoList.js
+import React from "react";
+
+const TodoList = props => {
+
+    const toggle = e => {
+        props.toggleComplete(props.item.id)
+    }
+    return(
+        <div className="task-card">
+            <div className={`item${props.item.completed ? " completed" : ""}`} key={props.item.id} onClick={toggle}>
+                <p>{props.item.task}</p>
+                
+            </div>
+        </div>
+    )
+}
+
+export default TodoList;
